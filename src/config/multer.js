@@ -2,10 +2,10 @@ import { diskStorage } from 'multer';
 import { resolve } from 'path';
 
 const multerConfig = {
-    dest: 'tmp/upload',
+    dest: 'src/temporario/upload',
     storage: diskStorage({
         destination: (res, file, cb) => {
-            cb(null, resolve('tmp/upload'))
+            cb(null, resolve('src/temporario/upload'))
         }
     }),
 }
