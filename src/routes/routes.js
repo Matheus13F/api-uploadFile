@@ -6,7 +6,8 @@ const routes = Router();
 
 routes.post('/post', multer(multerConfig).single('file'), (req, res) => {
     console.log(req.file);
+
     return res.json({ status: 'Sucesso' });
-})
+});
 
 export { routes };
